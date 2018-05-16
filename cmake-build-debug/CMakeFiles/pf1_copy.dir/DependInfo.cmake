@@ -1,0 +1,98 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_atoi.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_atoi.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_bzero.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_bzero.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_countnumb.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_countnumb.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_isalnum.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_isalnum.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_isalpha.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_isalpha.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_isascii.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_isascii.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_isdigit.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_isdigit.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_isprint.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_isprint.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_itoa.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_itoa.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstadd.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstadd.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstdel.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstdel.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstdelone.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstdelone.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstiter.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstiter.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstmap.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstmap.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_lstnew.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_lstnew.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memalloc.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memalloc.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memccpy.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memccpy.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memchr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memchr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memcmp.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memcmp.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memcpy.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memcpy.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memdel.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memdel.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memmove.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memmove.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_memset.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_memset.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_pf_write.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_pf_write.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_pow.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_pow.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putchar.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putchar.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putchar_fd.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putchar_fd.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putendl.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putendl.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putendl_fd.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putendl_fd.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putnbr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putnbr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putnbr_fd.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putnbr_fd.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putstr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putstr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_putstr_fd.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_putstr_fd.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_revprint.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_revprint.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_sizelist.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_sizelist.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_sndr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_sndr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strcat.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strcat.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strchr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strchr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strclr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strclr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strcmp.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strcmp.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strcpy.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strcpy.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strdel.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strdel.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strdup.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strdup.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strequ.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strequ.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_striter.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_striter.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_striteri.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_striteri.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strjoin.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strjoin.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strlcat.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strlcat.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strlen.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strlen.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strmap.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strmap.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strmapi.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strmapi.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strncat.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strncat.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strnchr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strnchr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strncmp.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strncmp.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strncpy.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strncpy.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strnequ.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strnequ.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strnew.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strnew.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strnstr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strnstr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strrchr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strrchr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strsplit.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strsplit.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strstr.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strstr.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strsub.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strsub.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_strtrim.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_strtrim.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_tolower.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_tolower.c.o"
+  "/Users/ivoloshi/development/pf1 copy/libft/ft_toupper.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/libft/ft_toupper.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/chars.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/chars.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/conversions.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/conversions.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/ft_itoa_base.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/ft_itoa_base.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/ft_len_u.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/ft_len_u.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/ft_printf.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/ft_printf.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/hash.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/hash.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/lenght.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/lenght.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/numbers.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/numbers.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/pointers.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/pointers.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/precision_zeros.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/precision_zeros.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/reading.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/reading.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/strings.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/strings.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/unsignedconv.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/unsignedconv.c.o"
+  "/Users/ivoloshi/development/pf1 copy/src/utf_str.c" "/Users/ivoloshi/development/pf1 copy/cmake-build-debug/CMakeFiles/pf1_copy.dir/src/utf_str.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "AppleClang")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

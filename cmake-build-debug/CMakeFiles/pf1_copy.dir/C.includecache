@@ -1,0 +1,344 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+stdarg.h
+-
+stdint.h
+-
+stdio.h
+-
+wchar.h
+-
+libft.h
+/Users/ivoloshi/development/pf1 copy/inc/libft.h
+
+/Users/ivoloshi/development/pf1 copy/inc/libft.h
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_atoi.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_bzero.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_countnumb.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_isalnum.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_isalpha.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_isascii.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_isdigit.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_isprint.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_itoa.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstadd.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstdel.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstdelone.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstiter.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstmap.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_lstnew.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memalloc.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memccpy.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memchr.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memcmp.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memcpy.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memdel.c
+string.h
+-
+stdlib.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memmove.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_memset.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_pf_write.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_pow.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putchar.c
+unistd.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putchar_fd.c
+unistd.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putendl.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putendl_fd.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putnbr.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putnbr_fd.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putstr.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_putstr_fd.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_revprint.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_sizelist.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_sndr.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strcat.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strchr.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strclr.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strcmp.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strcpy.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strdel.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strdup.c
+stdlib.h
+-
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strequ.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_striter.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_striteri.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strjoin.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strlcat.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strlen.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strmap.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strmapi.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strncat.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strnchr.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strncmp.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strncpy.c
+string.h
+-
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strnequ.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strnew.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strnstr.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strrchr.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strsplit.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strstr.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strsub.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_strtrim.c
+libft.h
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_tolower.c
+
+/Users/ivoloshi/development/pf1 copy/libft/ft_toupper.c
+
+/Users/ivoloshi/development/pf1 copy/libft/libft.h
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+/Users/ivoloshi/development/pf1 copy/src/chars.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/conversions.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/ft_itoa_base.c
+stdlib.h
+-
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/ft_len_u.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/ft_printf.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+limits.h
+-
+locale.h
+-
+
+/Users/ivoloshi/development/pf1 copy/src/hash.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/lenght.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/numbers.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/pointers.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/precision_zeros.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/reading.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/strings.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/unsignedconv.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
+/Users/ivoloshi/development/pf1 copy/src/utf_str.c
+../inc/ft_printf.h
+/Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
+
