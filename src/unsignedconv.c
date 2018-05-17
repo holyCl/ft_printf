@@ -29,13 +29,16 @@ void print_unsigned(t_conv *fl, size_t len, int *ret, char *value)
 
 void manage_unlen(t_conv *fl, int len, int *ret, char *value)
 {
+    if (ft_strcmp(value, "0") == 0)
+        return;
     fl->precision > fl->width? fl->width = 0:0;
     fl->precision<len? fl->precision = 0:0;
     if(fl->width >= len){
         if (fl->dot == TRUE && fl->precision > 0)
             fl->width -= fl->precision;
         else
-            fl->width -= len;
+//            if(fl->dot == FALSE && ft_strcmp(value, "0") != 0)
+                fl->width -= len;
         }
     else
         fl->width = 0;

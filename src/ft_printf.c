@@ -67,9 +67,17 @@ int main()
 //    printf("%d\n",printf("%S",NULL));
 //    printf("%d\n",ft_printf("%S",NULL));
 //    printf("%s", "NU CHE AA");
-    ret_1 = printf("%#08x", 42);
-    ret_2 = ft_printf("%#08x", 42);
-    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//    ret_1 = printf("@moulitest:%5.x\n", 0);
+//    ret_2 = ft_printf("@moulitest:%5.x\n", 0);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+
+    ret_1 = printf("%d\n", 42);
+//    ret_2 = ft_printf("% ++d\n", 42);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+//    ret_1 = printf("%5.2x\n", 5427);
+//    ret_2 = ft_printf("%5.2x\n", 5427);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
 
 
 //FAIL

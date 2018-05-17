@@ -80,13 +80,14 @@ int     ft_chars(t_conv *fl, va_list *arg_ptr)
     int ret;
     wchar_t value;
 
+
     ret = 0;
-    if (fl->lenght.len_l == TRUE)
+    if (fl->conv == '%')
+        value = '%';
+    else if (fl->lenght.len_l == TRUE)
         value = va_arg(*arg_ptr, wchar_t);
     else
         value = va_arg(*arg_ptr, int);
-    if (fl->conv == '%')
-        value = '%';
     parsechars(fl, value, &ret);
 
     return(ret);

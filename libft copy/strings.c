@@ -20,25 +20,27 @@ void    parsestr1(char *str, int len, t_conv *fl, int *ret)
         pf_write(str, len, 1);
         *ret += fl->width + len;
     }
-    else {
+    else
+    {
         if (fl->flags.minus != TRUE && fl->dot == TRUE) {
-            if(fl->width > len && fl->precision <= 0)
-                if(fl->precision == 0)
-                {
-                    pf_write(" ",1,fl->width);
+            if (fl->width > len && fl->precision <= 0)
+                if (fl->precision == 0) {
+                    pf_write(" ", 1, fl->width);
                     *ret += fl->width;
-                }
-                else {
+                }else {
                     pf_write(" ", 1, fl->width - len);
                     *ret += fl->width - len;
                 }
         }
-        if (fl->dot == FALSE || fl->dot == TRUE && fl->precision == -1) {
-            pf_write(str, len, 1);
-            *ret += len;
+        if(fl->flags.minus == FALSE && fl->width > len) {
+            pf_write(" ", 1, fl->width - len);
+            *ret += fl->width - len;
         }
+        pf_write(str, len, 1);
+        *ret += len;
     }
 }
+
 
 void ft_parsestr(char *str, int len, t_conv *fl, int *ret)
 {
@@ -61,8 +63,17 @@ void ft_parsestr(char *str, int len, t_conv *fl, int *ret)
     }
     else
         parsestr1(str,len,fl, ret);
-    fl->flags.minus == TRUE?pf_write(" ",1,fl->width):0;
-    fl->flags.minus == TRUE?*ret +=fl->width:0;
+    fl->flags.minus == TRUE && fl->precision == -1?pf_write(" ",1,fl->width):0;
+    fl->flags.minus == TRUE && fl->precision == -1?*ret +=fl->width:0;
+    if (fl->precision > len || fl->dot == FALSE) {
+        fl->flags.minus == TRUE && fl->precision >= 0 && len <= fl->width ? pf_write(" ", 1, fl->width - len) : 0;
+        fl->flags.minus == TRUE && fl->precision >= 0 && len <= fl->width ? *ret += fl->width - len : 0;
+    }
+    else
+    {
+        fl->flags.minus == TRUE && fl->precision >= 0 && len <= fl->width ? pf_write(" ", 1, fl->width - fl->precision) : 0;
+        fl->flags.minus == TRUE && fl->precision >= 0 && len <= fl->width ? *ret += fl->width - fl->precision : 0;
+    }
 }
 
 int lentype(t_conv *fl, va_list *arg_ptr, char *str, wchar_t *wstr)

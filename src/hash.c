@@ -23,7 +23,7 @@ void print_hash(t_conv *fl, size_t len, int *ret, char *value)
     }
     (fl->dot == FALSE || fl->dot == TRUE) && fl->precision == FALSE? 0:ft_putchar('0');
     *ret += ((fl->dot == FALSE || fl->dot == TRUE) && fl->precision == FALSE)?0:1;
-    if(fl->flags.zeros == FALSE || fl->flags.minus == TRUE)
+    if((fl->flags.zeros == FALSE || fl->flags.minus == TRUE) && ft_strcmp("0", value) != 0)
     {
         fl->precision == 0 && *value != '0' ? ft_putchar('0') : 0;
         fl->precision == 0 && *value != '0' ? *ret += 1 : 0;
@@ -47,7 +47,7 @@ void print_unsigned_hash(t_conv *fl, size_t len, int *ret, char *value)
     {
         len += 1;
         fl->width >= 1 && fl->precision < len?fl->width -= 1:0;
-        fl->width >= 1 && fl->precision < len?*ret += 1:0;
+//        fl->width >= 1 && fl->precision < len?*ret += 1:0;
 //        fl->precision > 0? fl->precision += 1:0;
     }
     else if (fl->conv == 'x' || fl->conv == 'X')

@@ -58,8 +58,12 @@ size_t  ft_read2(char **str, va_list *arg_ptr, int *step)
     ft_bzero(&new, sizeof(t_conv));
     while(*(*str+i))
     {
-        if (ft_strchr(FLAGS, *(*str + i)))
-            new = ft_checkfalgs(*(*str + i), &new);
+        if (ft_strchr(FLAGS, *(*str + i))) {
+            if (*(*str + i - 1) == '+' && *(*str + i) == '+')
+                new.flags.plus = TRUE;
+            else
+                new = ft_checkfalgs(*(*str + i), &new);
+        }
         if (strchr(DIGITS, *(*str + i)) && *(*str + i) != '0')
             ft_findlp(*str + i, &new, &i);
         if (strchr(CONV, *(*str + i))) {
