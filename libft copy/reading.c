@@ -36,11 +36,11 @@ void ft_findlp(char *str, t_conv *fl, size_t *pos)
 static t_conv ft_checkfalgs(char str, t_conv *fl)
 {
 
-    str == '#' ? fl->flags.hash  = TRUE : FALSE;
-    str == '-' ? fl->flags.minus = TRUE : FALSE;
-    str == '+' ? fl->flags.plus  = TRUE : FALSE;
-    str == ' ' ? fl->flags.blank = TRUE : FALSE;
-    str == '0' ? fl->flags.zeros  = TRUE : FALSE;
+    str == '#' ? fl->flags.hash += TRUE : FALSE;
+    str == '-' ? fl->flags.minus+= TRUE : FALSE;
+    str == '+' ? fl->flags.plus += TRUE : FALSE;
+    str == ' ' ? fl->flags.blank += TRUE : FALSE;
+    str == '0' ? fl->flags.zeros += TRUE : FALSE;
     str == 'h' ? fl->lenght.len_h += TRUE : FALSE;
     str == 'l' ? fl->lenght.len_l += TRUE : FALSE;
     str == 'j' ? fl->lenght.len_j += TRUE : FALSE;

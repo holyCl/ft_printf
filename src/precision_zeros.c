@@ -23,12 +23,14 @@ void    write_zero_blank(t_conv *fl, int *ret, intmax_t arg, int widhlen)
                 fl->width--;
             fl->flags.blank == TRUE && fl->flags.zeros == TRUE && arg > 0? fl->width--:0;
         }
-        (fl->flags.minus == TRUE && fl->flags.zeros == FALSE)? pf_write(" ", 1,fl->width):0;
-        (fl->flags.minus == TRUE && fl->flags.zeros == FALSE)?(*ret +=fl->width):0;
+        (fl->flags.minus == TRUE && fl->flags.zeros == FALSE)? pf_write(" ", 1,fl->width - fl->temp):0;
+        (fl->flags.minus == TRUE && fl->flags.zeros == FALSE)?(*ret +=fl->width - fl->temp):0;
         (fl->flags.minus == FALSE && fl->flags.zeros == FALSE && fl->precision > widhlen)?pf_write("0",1,fl->precision - widhlen):0;
         (fl->flags.minus == FALSE && fl->flags.zeros == FALSE && fl->precision > widhlen)?(*ret += fl->precision - widhlen):0;
-        (fl->flags.minus == FALSE && fl->flags.zeros == TRUE && widhlen > fl->precision)?pf_write("0",1,fl->width):0;
-        (fl->flags.minus == FALSE && fl->flags.zeros == TRUE && widhlen > fl->precision)?(*ret += fl->width):0;
+        (fl->flags.minus == FALSE && fl->flags.zeros == TRUE && widhlen > fl->precision && fl->dot == FALSE)?pf_write("0",1,fl->width):0;
+        (fl->flags.minus == FALSE && fl->flags.zeros == TRUE && widhlen > fl->precision && fl->dot == FALSE)?(*ret += fl->width):0;
+        fl->flags.zeros == TRUE && fl->precision == fl->width && fl->dot == TRUE && fl->precision> widhlen? pf_write ("0",1,fl->width - widhlen):0;
+        fl->flags.zeros == TRUE && fl->precision == fl->width && fl->dot == TRUE && fl->precision> widhlen? *ret += fl->width - widhlen:0;
 //        *ret+=fl->width;
 
     }

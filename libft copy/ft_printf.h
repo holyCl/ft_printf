@@ -43,6 +43,7 @@ typedef struct s_conv
 	int 	precision;
 	char	conv;
 	int     dot;
+	int		temp;
 }				t_conv;
 
 char        *ft_itoa_base(uintmax_t nb, int base, int capitilise);

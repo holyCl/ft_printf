@@ -50,8 +50,8 @@ int main()
 //    ret_2 = ft_printf("%4.15s", "I am 42");
 //    printf("\nret_1 = %i\nret_2 = %i\n", ret_1, ret_2);
 //
-//    ret_1 = printf("{%+2.5d}\n", 20);
-//    ret_2 = ft_printf("{%+2.5d}\n", 20);
+//    ret_1 = printf("%S\n", L"我是一只猫。");
+//    ret_2 = ft_printf("%S\n", L"我是一只猫。");
 //    printf("\nret_1 = %i\nret_2 = %i\n", ret_1, ret_2);
 
 
@@ -71,14 +71,57 @@ int main()
 //    ret_2 = ft_printf("@moulitest:%5.x\n", 0);
 //    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
 
-    ret_1 = printf("%d\n", 42);
-//    ret_2 = ft_printf("% ++d\n", 42);
+//    ft_printf("%-10.5d", 4242);
+//    ft_printf("% 10.5d", 4242);
+//    ft_printf("%+10.5d", 4242);
+//    ft_printf("%-+10.5d", 4242);
+//    ft_printf("%03.2d", 0);
+//    ft_printf("%03.2d", 1);
+//    ft_printf("%03.2d", -1);
+
+
+//    ret_1 = printf("%03.2d\n", -1);
+//    ret_2 = ft_printf("%03.2d\n", -1);
 //    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
 //
-//    ret_1 = printf("%5.2x\n", 5427);
-//    ret_2 = ft_printf("%5.2x\n", 5427);
-//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+//
 
+
+//    ret_1 = printf("%5.d %5.0d\n", 0, 0);
+//    ret_2 = ft_printf("%5.d %5.0d\n", 0, 0);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+  //  while (1) {
+        ret_1 = printf("{%+03d}\n", 12);
+        ret_2 = ft_printf("{%+03d}\n", 12);
+        printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+
+//
+    ret_1 = printf("@moulitest: %#.x %#.0x\n", 0, 0);
+    ret_2 = ft_printf("@moulitest: %#.x %#.0x\n", 0, 0);
+    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+
+    ret_1 = printf("@moulitest: %#.x %#.0x\n", 0, 0);
+    ret_2 = ft_printf("@moulitest: %#.x %#.0x\n", 0, 0);
+    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+
+    ret_1 = printf("@moulitest: %5.o %5.0o\n", 0, 0);
+    ret_2 = ft_printf("@moulitest: %5.o %5.0o\n", 0, 0);
+    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+    ret_1 = printf("%x", 0);;
+    ret_2 = ft_printf("%x", 0);;
+    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+//    ret_1 = printf("%03d\n", 1);
+//    ret_2 = ft_printf("%03d\n", 1);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
+//    ret_1 = printf("%5.2x\n", -5427);
+//    ret_2 = ft_printf("%5.2x\n", -5427);
+//    printf("\nret_1 = %i\nret_2 = %i\n\n", ret_1, ret_2);
+//
 
 //FAIL
 //    ret_1 = printf("%#.1O\n", 0);
@@ -234,3 +277,18 @@ int main()
 //    ft_printf("|%12.8.10.6"CNV"|\t|%20.8.-12.6"CNV"|\t|%20.8.12.-6"CNV"||%20.-5.12.3"CNV"|\t|%10.8.12.6-"CNV"|",42,42,42,42,42);
 //    ft_printf("|%."CNV" %.0"CNV" %0."CNV" %0.0"CNV"|\t\t|%"CNV" %.2"CNV" %2."CNV" %2.2"CNV"|\t\t\t\t",0,0,0,0,0,0,0,0);
 }
+
+
+/*
+if (*(a + 1) == '%')
+    {
+        *str += 1;
+        pf_write("%",1,1);
+        *step +=1;
+        *str += 1;
+        return(0);
+    }
+    else
+        *str += 1;
+
+ */

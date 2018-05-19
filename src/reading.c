@@ -91,7 +91,6 @@ size_t  ft_read2(char **str, va_list *arg_ptr, int *step)
 size_t ft_reading(char **str, va_list *arg_ptr ,int *step)
 {
     size_t pos;
-
     pos = 0;
 
     if (*(*str+=1) == '%')

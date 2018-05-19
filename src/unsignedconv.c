@@ -5,7 +5,6 @@
 #include "../inc/ft_printf.h"
 
 
-
 void print_unsigned(t_conv *fl, size_t len, int *ret, char *value)
 {
 
@@ -18,8 +17,17 @@ void print_unsigned(t_conv *fl, size_t len, int *ret, char *value)
         *ret += fl->width;
     }
     write_precision(fl, (int)len, ret, ft_atoi(value));
-    *value == '0' && fl->dot == TRUE?0:ft_putstr(value);
-    *ret += (*value == '0' && fl->dot == TRUE)?0:(ft_strlen(value));
+    if (*value != '0')
+    {
+        ft_putstr(value);
+        *ret += ft_strlen(value);
+    }
+    else if (*value == '0' && fl->dot == FALSE) {
+        ft_putstr(value);
+        *ret += ft_strlen(value);
+    }
+//    *value == '0' && fl->dot == TRUE?0:ft_putstr(value);
+
     if (fl->flags.minus == TRUE)
     {
         pf_write(" ", 1, fl->width);
@@ -38,15 +46,15 @@ void manage_unlen(t_conv *fl, int len, int *ret, char *value)
             fl->width -= fl->precision;
         else
 //            if(fl->dot == FALSE && ft_strcmp(value, "0") != 0)
-                fl->width -= len;
-        }
+            fl->width -= len;
+    }
     else
         fl->width = 0;
 }
 
 int     fl_unsconv(t_conv *fl, va_list *arg_ptr, int base)
 {
-    uintmax_t *value;
+    char *value;
     int ret;
     size_t len;
 
@@ -55,8 +63,11 @@ int     fl_unsconv(t_conv *fl, va_list *arg_ptr, int base)
     len = ft_strlen(value);
     manage_unlen(fl, len, &ret, value);
     if((fl->conv == 'X' || fl->conv == 'x'|| fl->conv == 'o') && fl->flags.hash == TRUE)
-        *value != '0'?print_unsigned_hash(fl, len, &ret, value):print_unsigned(fl, len, &ret, value);
+        print_unsigned_hash(fl, len, &ret, value);
+//        *value != '0'?print_unsigned_hash(fl, len, &ret, value):print_unsigned(fl, len, &ret, value);
+
     else
         print_unsigned(fl, len, &ret, value);
     return (ret);
 }
+

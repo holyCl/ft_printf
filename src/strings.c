@@ -114,6 +114,5 @@ int ft_str(t_conv *fl, va_list *arg_ptr)
     ret = 0;
     ret += lentype(fl, arg_ptr, str, wstr);
 
-
     return (ret);
 }

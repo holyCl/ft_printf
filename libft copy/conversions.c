@@ -9,7 +9,7 @@ int ft_parseconv(t_conv *fl, va_list *arg_ptr)
         ret = ft_numbers(fl, arg_ptr);
     else if (fl->conv == 's')
         ret = ft_str(fl, arg_ptr);
-    else if (fl->conv == 'c')
+    else if (fl->conv == 'c' || fl->conv == '%')
         ret = ft_chars(fl, arg_ptr);
     else if (fl->conv == 'o')
         ret = fl_unsconv(fl, arg_ptr, 8);
@@ -47,10 +47,10 @@ int ft_conv(char str, t_conv *fl, va_list *arg_ptr)
     else
         fl->conv = str;
     ret = ft_parseconv(fl, arg_ptr);
-    if ((str) == '%')
-    {
-        ft_putchar('%');
-        ret += 1;
-    }
+//    if (str == '%')
+//    {
+//        ft_putchar('%');
+//        ret += 1;
+//    }
     return (ret);
 }
