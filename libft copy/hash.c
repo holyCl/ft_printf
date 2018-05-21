@@ -31,7 +31,7 @@ void print_hash(t_conv *fl, size_t len, int *ret, char *value)
         fl->conv != 'o' ? *ret += 1 : 0;
     }
     write_precision(fl, (int)len, ret, ft_atoi(value));
-    if ((*value != '0' && fl->dot != TRUE) || fl->conv == 'o' || (fl->conv != 'o' && fl->dot == FALSE)) {
+    if ((*value != '0') || fl->conv == 'o' || (fl->conv != 'o' && fl->dot == FALSE)) {
         ft_putstr(value);
         *ret += (ft_strlen(value));
     }

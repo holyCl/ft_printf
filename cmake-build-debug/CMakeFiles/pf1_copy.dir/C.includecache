@@ -301,10 +301,6 @@ stdlib.h
 /Users/ivoloshi/development/pf1 copy/src/ft_printf.c
 ../inc/ft_printf.h
 /Users/ivoloshi/development/pf1 copy/inc/ft_printf.h
-limits.h
--
-locale.h
--
 
 /Users/ivoloshi/development/pf1 copy/src/hash.c
 ../inc/ft_printf.h

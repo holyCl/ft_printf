@@ -6,7 +6,7 @@
 /*   By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:31:33 by ivoloshi          #+#    #+#             */
-/*   Updated: 2018/05/09 14:35:27 by ivoloshi         ###   ########.fr       */
+/*   Updated: 2018/05/21 14:26:34 by ivoloshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char		*ft_itoa_base(uintmax_t nb, int base, int capitilise)
 	char	*symb_lower;
 	char	*symb_upper;
 
-	nb < 0 ? nb *= -1:0;
+	nb < 0 ? nb *= -1 : 0;
 	len = ft_len_u(nb, base);
 	symb_lower = "0123456789abcdef";
 	symb_upper = "0123456789ABCDEF";

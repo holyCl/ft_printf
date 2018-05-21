@@ -6,8 +6,8 @@ void parselenstr(t_conv *fl, int len, char *str)
             fl->width = 0;
     if(fl->precision > fl->width && fl->precision >len)
         fl->precision = -1;
-    if(!ft_strcmp("0", str))
-        fl->width = 0;
+    if(fl->dot == TRUE && fl->precision == FALSE)
+        fl->dot = -1;
     if (fl->precision > 0 && fl->precision >= len && fl->dot == FALSE)
         fl->precision = 0;
 }
@@ -16,15 +16,19 @@ void    parsestr1(char *str, int len, t_conv *fl, int *ret)
     if (ft_strcmp("(null)",str) && fl->width == TRUE)
         str = "0";
     if (fl->flags.zeros == TRUE) {
-        pf_write("0", 1, fl->width);
-        pf_write(str, len, 1);
-        *ret += fl->width + len;
+        if (fl->width >= len) {
+            pf_write("0", 1, fl->width - len);
+            pf_write(str, len, 1);
+            *ret += fl->width;
+        }
+//        else
+//            pf_write("0",1,fl->width);
     }
     else
     {
-        if (fl->flags.minus != TRUE && fl->dot == TRUE) {
+        if (fl->flags.minus != TRUE) {
             if (fl->width > len && fl->precision <= 0)
-                if (fl->precision == 0) {
+                if (fl->precision == 0 && fl->dot != FALSE) {
                     pf_write(" ", 1, fl->width);
                     *ret += fl->width;
                 }else {
@@ -32,12 +36,12 @@ void    parsestr1(char *str, int len, t_conv *fl, int *ret)
                     *ret += fl->width - len;
                 }
         }
-        if(fl->flags.minus == FALSE && fl->width > len) {
+        if(fl->flags.minus == FALSE && fl->width > len && fl->precision > 0) {
             pf_write(" ", 1, fl->width - len);
             *ret += fl->width - len;
         }
-        pf_write(str, len, 1);
-        *ret += len;
+        fl->dot != -1?pf_write(str, len, 1):0;
+        fl->dot != -1?*ret += len:0;
     }
 }
 

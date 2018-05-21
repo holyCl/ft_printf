@@ -37,21 +37,27 @@ void utf_parselenstr(t_conv *fl, int len, wchar_t *wstr)
 
 void    utf_parsestr1(wchar_t *wstr, int len, t_conv *fl, int *ret)
 {
-    if (fl->flags.zeros == TRUE) {
-        pf_write("0", 1, fl->width);
+    if (fl->flags.zeros == TRUE && fl->width > len) {
+        pf_write("0", 1, fl->width - len);
         if (fl->dot == FALSE) {
             while (*wstr) {
                 ft_putwchar(*wstr);
                 *ret += ft_ucharlen(*wstr++);
             }
         }
-        *ret += fl->width;
+        *ret += fl->width - len;
     }
     else {
         if (fl->flags.minus != TRUE && len < fl->width) {
             pf_write(" ", 1, fl->width - len);
             *ret += fl->width - len;
         }
+        else if(len > fl->width && fl->dot == TRUE)
+        {
+            fl->flags.zeros == FALSE?pf_write(" ",1,fl->width):pf_write("0",1,fl->width);
+            *ret += fl->width;
+        }
+
         if (fl -> dot == FALSE)
         {
             while(*wstr)
@@ -88,7 +94,8 @@ void utf_str(wchar_t *wstr, int len, t_conv *fl, int *ret)
     }
     else
         utf_parsestr1(wstr,len,fl, ret);
-    fl->flags.minus == TRUE?pf_write(" ",1,fl->width - len):0;
-    fl->flags.minus == TRUE?*ret +=fl->width - len:0;
+    fl->flags.minus == TRUE && len <= fl->width?pf_write(" ",1,fl->width - len):0;
+    fl->flags.minus == TRUE && fl->width >= len?*ret +=fl->width - len:0;
 }
+
 
