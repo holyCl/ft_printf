@@ -1,50 +1,102 @@
-.PHONY: all, clean, fclean, re
+#******************************************************************************#
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/23 17:45:08 by ivoloshi          #+#    #+#              #
+#    Updated: 2018/05/23 17:45:10 by ivoloshi         ###   ########.fr        #
+#                                                                              #
+#******************************************************************************#
 
-NAME := libftprintf.a
+# name of the executable file
 
-SRC_DIR := ./src/
-LIB_DIR := ./libft/
+NAME :=			libftprintf.a
 
-LIB := $(addprefix $(LIB_DIR), ft_isalnum.c ft_isalpha.c ft_isascii.c \
-ft_tolower.c ft_toupper.c ft_atoi.c ft_bzero.c ft_memccpy.c ft_memchr.c \
-ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strcat.c ft_strchr.c \
-ft_strcmp.c ft_strcpy.c ft_strdup.c ft_strlcat.c ft_strlen.c ft_strncat.c \
-ft_strncmp.c ft_strncpy.c ft_strnstr.c ft_strrchr.c ft_strstr.c ft_strnew.c \
-ft_strdel.c ft_memalloc.c ft_memdel.c ft_strclr.c ft_striter.c ft_striteri.c \
-ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c \
-ft_strtrim.c ft_strsplit.c ft_itoa.c ft_putchar.c ft_putendl.c ft_putstr.c \
-ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
-ft_revprint.c ft_sndr.c ft_countnumb.c ft_sizelist.c ft_pow.c ft_strnchr.c \
-ft_pf_write.c ft_isdigit.c ft_isprint.c )
+# project directories
 
-SRC := $(addprefix $(SRC_DIR),ft_printf cnumbers.c reading.c strings.c\
-conversions.c chars.c unsignedconv.c pointers.c lenght.c ft_itoa_base.c \
-ft_len_u.c hash.c precision_zeros.c )
+SRC_DIR :=		./src/
+OBJ_DIR :=		./obj/
+INC_DIR :=		./inc/
+LIB_DIR :=		./libft/
 
-SRC_OBJ = $(SRC:.c=.o)
+# project source files
 
-LIB_OBJ = $(LIB:.c=.o)
+#
+# need to add all c files by name
+#
+
+SRC :=			ft_printf.c \
+				numbers.c \
+				numbers2.c \
+				reading.c \
+				strings.c \
+				strings2.c\
+				conversions.c \
+				chars.c \
+				unsignedconv.c \
+				pointers.c \
+				lenght.c \
+				ft_itoa_base.c \
+				ft_len_u.c \
+				hash.c \
+				precision_zeros.c \
+				utf_str.c \
+
+# project object files
+
+OBJ = 			$(addprefix $(OBJ_DIR), $(SRC:.c=.o))
+
+# libraries
+
+LIBFT =			$(LIBFT_DIR)libft.a
+LIBFT_DIR :=	$(LIB_DIR)
+LIBFT_INC :=	$(LIBFT_DIR)
+LIBFT_FLAGS :=	-lft -L $(LIBFT_DIR)
+
+# compilation flags
+
+FLAGS := -Wall -Wextra -Werror -O3
+
+# linking flags
+
+LINK_FLAGS :=	$(LIBFT_FLAGS)
+
+# header flags
+
+HEADER_FLAGS :=	-I $(INC_DIR) -I $(LIBFT_INC)
+
+# rules
 
 all: $(NAME)
 
-$(NAME):pf.c $(SRC_OBJ) $(LIB_OBJ)
-        @ar rc $(NAME) $(SRC_OBJ) $(LIB_OBJ)
-		@ranlib $(NAME)
-		@echo "\033[0;32mlib compiled.\033[0m "
+$(NAME): $(LIBFT) $(OBJ)
+		@ ar rc $(NAME) $(OBJ) libft/*.o
+		@ ranlib $(NAME)
+
+$(OBJ): | $(OBJ_DIR)
+
+$(OBJ_DIR):
+	@ mkdir $(OBJ_DIR)
+
+$(OBJ_DIR)%.o: %.c
+	@ gcc -c $< -o $@ -I $(FLAGS) $(HEADER_FLAGS)
+
+$(LIBFT):
+	@ make -C $(LIBFT_DIR)
 
 clean:
-		@rm -rf $(SRC_OBJ)
-		@rm -rf $(LIB_OBJ)
-		@echo "\033[0;32mCLEANED\033[0m "
+	@ rm -f $(OBJ)
+	@ make clean -C $(LIBFT_DIR)
 
-fclean: clean
-		@rm -f $(NAME)
+fclean:
+	@ rm -f $(NAME)
+	@ rm -rf $(OBJ_DIR)
+	@ make fclean -C $(LIBFT_DIR)
 
 re: fclean all
 
-$(LIB_OBJ): %.o : %.c inc/libft.h
-	gcc -o $@ -c $< -Wall -Werror -Wextra -I./inc
+vpath %.c $(SRC_DIR)
 
-$(SRC_OBJ): %.o : %.c inc/libft.h inc/ft_printf.h
-	gcc -o $@ -c $< -Wall -Werror -Wextra -I./inc
+.PHONY: all clean fclean re

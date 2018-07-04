@@ -21,7 +21,6 @@ $(NAME):
 	gcc -c $(FLAGS) $(CFILES)
 	ar rc $(NAME) $(OFILES)
 	ranlib $(NAME)
-	rm -rf $(OFILES)
 clean:
 	rm -rf $(OFILES)
 fclean: clean

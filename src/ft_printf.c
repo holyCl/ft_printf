@@ -6,7 +6,7 @@
 /*   By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 14:28:46 by ivoloshi          #+#    #+#             */
-/*   Updated: 2018/05/21 14:33:47 by ivoloshi         ###   ########.fr       */
+/*   Updated: 2018/05/23 16:13:41 by ivoloshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,31 +16,24 @@ int			ft_printf(char *format, ...)
 {
 	va_list	arg_ptr;
 	int		step;
-	char	*str;
 
-	str = ft_strdup(format);
 	step = 0;
 	va_start(arg_ptr, format);
-	while (*str)
+	while (*format)
 	{
-		if (*str == '%')
+		if (*format == '%')
 		{
-			str += ft_reading(&str, &arg_ptr, &step);
-			if (!(*str))
+			format += ft_reading(&format, &arg_ptr, &step);
+			if (!(*format))
 				break ;
 		}
-		else if (*str)
+		else if (*format)
 		{
-			ft_putchar(*str);
+			ft_putchar(*format);
 			step++;
-			str++;
+			format++;
 		}
 	}
 	va_end(arg_ptr);
 	return (step);
 }
-
-//int main(void)
-//{
-//    ft_printf("%-5d",43);
-//}

@@ -6,7 +6,7 @@
 /*   By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/09 17:00:26 by ivoloshi          #+#    #+#             */
-/*   Updated: 2018/02/09 17:09:44 by ivoloshi         ###   ########.fr       */
+/*   Updated: 2018/05/24 13:12:55 by ivoloshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int			ft_strnchr(const char *s, int c)
 				return (-1);
 			i++;
 		}
-	return (i);
+		return (i);
 	}
 	return (-1);
 }

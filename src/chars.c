@@ -6,7 +6,7 @@
 /*   By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 14:09:45 by ivoloshi          #+#    #+#             */
-/*   Updated: 2018/05/21 14:22:39 by ivoloshi         ###   ########.fr       */
+/*   Updated: 2018/05/23 16:14:07 by ivoloshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,8 @@ void		parsechars(t_conv *fl, wchar_t value, int *ret)
 {
 	if (fl->flags.minus == FALSE && fl->width > 0)
 	{
-		fl->flags.zeros == FALSE ? pf_write(" ", 1, fl->width - 1) : pf_write("0", 1, fl->width - 1);
+		fl->flags.zeros == FALSE ?\
+		pf_write(" ", 1, fl->width - 1) : pf_write("0", 1, fl->width - 1);
 		*ret += fl->width - 1;
 	}
 	fl->lenght.len_l == FALSE ? ft_putchar(value) : ft_putwchar(value);

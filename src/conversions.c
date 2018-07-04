@@ -6,7 +6,7 @@
 /*   By: ivoloshi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 14:23:30 by ivoloshi          #+#    #+#             */
-/*   Updated: 2018/05/21 14:25:33 by ivoloshi         ###   ########.fr       */
+/*   Updated: 2018/05/23 16:10:10 by ivoloshi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char		ft_tolow(char a)
 
 int			ft_conv(char str, t_conv *fl, va_list *arg_ptr)
 {
-	int ret;
+	int		ret;
 
 	ret = 0;
 	if (str == 'C' || str == 'U' || str == 'S' || \
@@ -61,4 +61,18 @@ int			ft_conv(char str, t_conv *fl, va_list *arg_ptr)
 		fl->conv = str;
 	ret = ft_parseconv(fl, arg_ptr);
 	return (ret);
+}
+
+t_conv		ft_checkfalgs(char str, t_conv *fl)
+{
+	str == '#' ? fl->flags.hash += TRUE : FALSE;
+	str == '-' ? fl->flags.minus += TRUE : FALSE;
+	str == '+' ? fl->flags.plus += TRUE : FALSE;
+	str == ' ' ? fl->flags.blank += TRUE : FALSE;
+	str == '0' ? fl->flags.zeros += TRUE : FALSE;
+	str == 'h' ? fl->lenght.len_h += TRUE : FALSE;
+	str == 'l' ? fl->lenght.len_l += TRUE : FALSE;
+	str == 'j' ? fl->lenght.len_j += TRUE : FALSE;
+	str == 'z' ? fl->lenght.len_z += TRUE : FALSE;
+	return (*fl);
 }

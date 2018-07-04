@@ -26,7 +26,7 @@ void		print_hash1(t_conv *fl, size_t len, int *ret, char *value)
 		fl->conv != 'o' ? ft_putchar(fl->conv) : 0;
 		fl->conv != 'o' ? *ret += 1 : 0;
 	}
-	write_precision(fl, (int)len, ret, ft_atoi(value));
+	write_precision(fl, (int)len, ret);
 	if ((*value != '0') || fl->conv == 'o' || (fl->conv != 'o' && \
 	fl->dot == FALSE))
 	{
@@ -38,7 +38,6 @@ void		print_hash1(t_conv *fl, size_t len, int *ret, char *value)
 		pf_write(" ", 1, fl->width);
 		*ret += fl->width;
 	}
-	free(value);
 }
 
 void		print_hash(t_conv *fl, size_t len, int *ret, char *value)
@@ -61,7 +60,7 @@ void		print_hash(t_conv *fl, size_t len, int *ret, char *value)
 	print_hash1(fl, len, ret, value);
 }
 
-void		print_unsigned_hash(t_conv *fl, size_t len, int *ret, char *value)
+void		print_unsigned_hash(t_conv *fl, int len, int *ret, char *value)
 {
 	if (fl->conv == 'o')
 	{

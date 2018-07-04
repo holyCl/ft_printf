@@ -53,7 +53,7 @@ void			print_unsigned1(t_conv *fl, size_t len, int *ret, char *value)
 	}
 	else
 		ft_putstr("0x");
-	write_precision(fl, (int)len, ret, ft_atoi(value));
+	write_precision(fl, (int)len, ret);
 	print_unsigned2(fl, ret, value);
 }
 

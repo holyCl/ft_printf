@@ -12,7 +12,7 @@
 
 #include "../inc/ft_printf.h"
 
-void	write_precision(t_conv *fl, int widthlen, int *ret, intmax_t arg)
+void	write_precision(t_conv *fl, int widthlen, int *ret)
 {
 	if (fl->precision > 0)
 		while (fl->precision-- - widthlen > 0)
@@ -22,7 +22,7 @@ void	write_precision(t_conv *fl, int widthlen, int *ret, intmax_t arg)
 		}
 }
 
-void	write_zero1(t_conv *fl, int *ret, intmax_t arg, int widhlen)
+void	write_zero1(t_conv *fl, int *ret, int widhlen)
 {
 	(fl->flags.minus == FALSE && fl->flags.zeros == TRUE\
 		&& widhlen > fl->precision && fl->dot == FALSE) ? \
@@ -58,7 +58,7 @@ void	write_zero_blank(t_conv *fl, int *ret, intmax_t arg, int widhlen)
 		> widhlen) ? pf_write("0", 1, fl->precision - widhlen) : 0;
 		(fl->flags.minus == FALSE && fl->flags.zeros == FALSE\
 		&& fl->precision > widhlen) ? (*ret += fl->precision - widhlen) : 0;
-		write_zero1(fl, ret, arg, widhlen);
+		write_zero1(fl, ret, widhlen);
 	}
 }
 
