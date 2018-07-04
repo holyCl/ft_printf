@@ -12,6 +12,8 @@ You can find more information about printf family of functions reading it's man 
 
 ## DESCRIPTION OF THIS IMPLEMENTATION:
 
+<img src="https://github.com/images/error/angry_unicorn.png" width="222">
+
 The aim of this project is to write a well-structured and easily expandable code.
 
 Ft_printf manages 5 groups of data:
